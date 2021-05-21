@@ -1,0 +1,119 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: poppins;
+}
+html{
+    scroll-behavior: smooth;
+}
+section{
+    padding: 100px;
+}
+.banner{
+    position: relative;
+    min-height: 100vh;
+    background: url(images/bg.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner h1 {
+    font-size: 4em;
+    font-weight: 600;
+    color: red;
+    line-height: 1.2em;
+}
+.banner h1 span{
+    font-size: 1.5em;
+    font-weight: 500;
+    color: white;
+    line-height: 1.2em;
+}
+.downbtn{
+    position: relative;
+    display: inline-block;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    background-color: red;
+    border: 2px solid red;
+    padding: 20px 40px;
+    border-radius: 2em;
+}
+.downbtn:hover {
+    position: relative;
+    display: inline-block;
+    font-weight: 600;
+    color: red;
+    text-decoration: none;
+    background-color: white;
+    border: 2px solid red;
+    padding: 20px 40px;
+    border-radius: 2em;
+    transition: 1.5s;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: 0.5s;
+}
+
+header.sticky{
+    background: #fff;
+    padding: 20px 100px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+header .logo{
+    color: white;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+header.sticky .logo{
+    color: #111;
+}
+header ul{
+    position: relative;
+    display: flex;
+}
+header ul li{
+    position: relative;
+    list-style: none;
+}
+
+header ul li a{
+    position: relative;
+    display: inline-block;
+    margin: 0px 15px;
+    color: white;
+    text-decoration: none;
+}
+
+header.sticky ul li a {
+    color: #111;
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#AboutCreator{
+    background: black;
+    color: white;
+}
+
